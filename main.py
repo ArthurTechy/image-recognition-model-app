@@ -87,7 +87,7 @@ def main():
         with col1:
             uploaded_file = st.file_uploader(
                 "Choose an image...", 
-                type=["jpg", "jpeg", "png"]
+                type=["jpg", "jpeg", "png", "webp"]
             )
             
             if uploaded_file is not None:
