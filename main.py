@@ -40,8 +40,7 @@ def load_model():
         st.error(f"Error loading model: {str(e)}")
         return None
 
-# Cache the image preprocessing
-@st.cache_data(hash_funcs={Image.Image: lambda x: hash(x.tobytes())})
+# image preprocessing
 def preprocess_image(image):
     # Resize image to 32x32
     image = image.resize((32, 32))
